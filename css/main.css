@@ -163,10 +163,13 @@ main {
     
 /* section */
 .section:not(:first-child) {
-    padding-top: 5em;
+    padding-top: 8em;
     padding-bottom: 5em;
-    /* max-width: 100%;
-    overflow-x: hidden; */
+    
+}
+.section#events {
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 .section-title,
 .event-descript h3,
