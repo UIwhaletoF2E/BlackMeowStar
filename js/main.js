@@ -48,6 +48,15 @@ $(document).ready(function() {
         });
 
     });
+    var navLinks = $('.nav-item');
+    var menuToggle = $('#navbarText');
+    var bsCollapse = new bootstrap.Collapse(menuToggle[0], { toggle: false });
+
+    navLinks.each(function () {
+      $(this).on('click', function () {
+        bsCollapse.toggle();
+      });
+    });
 
     //section menu scroll and add active class
     $(window).scroll(function (event) {
